@@ -1,3 +1,4 @@
+// An example of an iterator operation performed imperatively
 fn main() {
     let my_vec = vec![1, 3, 2, 4, 3, 5];
 
@@ -5,7 +6,7 @@ fn main() {
     for n in my_vec.iter() {
         let result = n * 3;
 
-        if n % 2 == 0 {
+        if result % 2 == 0 {
             sum += result;
         }
     }

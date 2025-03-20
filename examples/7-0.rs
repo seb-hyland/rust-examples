@@ -1,7 +1,7 @@
 fn safe_divide(a: i32, b: i32) -> Result<i32, &'static str> {
     match b {
         0 => Err("Division by 0 attempted!"),
-        _ => Ok(a / b)
+        _ => Ok(a / b),
     }
 }
 
@@ -27,7 +27,7 @@ fn main() {
 
 fn multi_safe_divide_ugly(nums: &Vec<i32>, b: i32) -> Result<Vec<i32>, &'static str> {
     let mut result = Vec::new();
-    
+
     for n in nums {
         match safe_divide(*n, b) {
             Ok(quotient) => result.push(quotient),

@@ -1,3 +1,3 @@
-((nil
-  . ((eglot-workspace-configuration
-      . (:rust-analyzer (:cargo :features ["all"]))))))
+;; ((nil
+;;   . ((eglot-workspace-configuration
+;;       . (:rust-analyzer (:cargo :features ["all"]))))))
